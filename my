@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Schedule</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fff;
+        }
+
+        .container {
+            max-width: 400px;
+            margin: auto;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .header {
+            background-color: #e1c0f1;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .icons img {
+            width: 100%;
+            max-width: 200px;
+        }
+
+        .event-info {
+            text-align: center;
+        }
+
+        .time {
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .event-title {
+            font-size: 14px;
+            color: #333;
+        }
+
+        .participants {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 10px;
+        }
+
+        .participant {
+            width: 45%;
+            margin: 2.5%;
+            text-align: center;
+        }
+
+        .participant img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .name {
+            font-weight: bold;
+            margin-top: 5px;
+        }
+
+        .country {
+            color: #666;
+            font-size: 14px;
+        }
+
+        .footer {
+            display: flex;
+            justify-content: space-around;
+            padding: 10px;
+            background-color: #f4f4f4;
+            border-top: 1px solid #ccc;
+        }
+
+        .footer .icon {
+            width: 25px;
+            height: 25px;
+            background-color: #ccc;
+            border-radius: 50%;
+        }
+
+        .home { background-color: #000; }
+        .stats { background-color: #007bff; }
+        .calendar { background-color: #28a745; }
+        .settings { background-color: #dc3545; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="icons">
+                <img src="icons.svg" alt="Icons" />
+            </div>
+            <div class="event-info">
+                <span class="time">18:00</span>
+                <span class="event-title">קפיצה במוט גמר - גברים</span>
+            </div>
+        </header>
+
+        <section class="participants">
+            <div class="participant">
+                <img src="kendricks.jpg" alt="S. Kendricks">
+                <div class="name">S. Kendricks</div>
+                <div class="country">United States</div>
+            </div>
+            <div class="participant">
+                <img src="duplantis.jpg" alt="A. Duplantis">
+                <div class="name">A. Duplantis</div>
+                <div class="country">Swedish</div>
+            </div>
+            <div class="participant">
+                <img src="obiena.jpg" alt="EJ Obiena">
+                <div class="name">EJ Obiena</div>
+                <div class="country">Philippines</div>
+            </div>
+            <div class="participant">
+                <img src="karalis.jpg" alt="E. Karalis">
+                <div class="name">E. Karalis</div>
+                <div class="country">Greece</div>
+            </div>
+            <div class="participant">
+                <img src="marschall.jpg" alt="K. Marschall">
+                <div class="name">K. Marschall</div>
+                <div class="country">Australia</div>
+            </div>
+            <div class="participant">
+                <img src="sasma.jpg" alt="E. Şaşma">
+                <div class="name">E. Şaşma</div>
+                <div class="country">Türkiye</div>
+            </div>
+            <div class="participant">
+                <img src="other1.jpg" alt="Other Participant 1">
+                <div class="name">Participant 1</div>
+                <div class="country">Country</div>
+            </div>
+            <div class="participant">
+                <img src="other2.jpg" alt="Other Participant 2">
+                <div class="name">Participant 2</div>
+                <div class="country">Country</div>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="icon home"></div>
+            <div class="icon stats"></div>
+            <div class="icon calendar"></div>
+            <div class="icon settings"></div>
+        </footer>
+    </div>
+</body>
+</html>
